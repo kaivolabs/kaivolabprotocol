@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>KAIVO | Spend once, route anywhere</title>
+<meta name="description" content="KAIVO holds a steady pool of value that software agents draw on across hundreds of engines, beside a live market board.">
+<meta property="og:title" content="KAIVO">
+<meta property="og:description" content="A steady pool of value, hundreds of engines, a readable spend trail.">
+<meta property="og:image" content="https://kaivo.cc/assets/logo-640.png">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className+=' js'</script>
+</head>
+<body>
+<div class="progress" aria-hidden="true"><i></i></div>
+<div class="mesh" aria-hidden="true"><i></i><i></i><i></i></div>
+<header class="top" id="top">
+  <div class="wrap">
+    <div class="top-row">
+      <a class="brand" href="#home" aria-label="KAIVO home"><img src="assets/logo-192.png" width="34" height="34" alt=""><b>KAIVO</b></a>
+      <span class="chain-badge in-head" data-rec="chain" data-state="stated"><img src="assets/elysium-mark.png" width="24" height="24" alt=""><span class="cb-name">Elysium</span></span>
+      <nav class="nav" aria-label="Sections">
+        <a href="#market">Market</a><a href="#how">Flow</a><a href="#models">Models</a><a href="#funding">Funding</a><a href="#chain">Chain</a><a href="#faq">FAQ</a>
+      </nav>
+      <div class="top-end">
+        <a class="soc" data-rec="x" data-state="stated" href="https://x.com/kaivocc" target="_blank" rel="noopener noreferrer" aria-label="X @kaivocc" title="X @kaivocc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a>
+        <a class="soc" data-rec="github" data-state="stated" href="https://github.com/kaivocc/kaivocc-protocol" target="_blank" rel="noopener noreferrer" aria-label="GitHub @kaivocc" title="GitHub @kaivocc"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></a>
+        <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg class="bars" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></svg><svg class="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      </div>
+    </div>
+    <nav class="menu-panel" id="menu" aria-label="Sections menu">
+      <a href="#market">Market</a><a href="#how">Flow</a><a href="#models">Models</a><a href="#funding">Funding</a><a href="#chain">Chain</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="ca inert" data-rec="ca" data-state="absent" id="ca">
+      <span class="ca-tag">Contract address</span>
+      <span class="ca-pending">pending</span>
+      <button class="ca-btn" type="button" disabled aria-disabled="true" style="opacity:.45;cursor:not-allowed"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6.5A2.5 2.5 0 0 1 7.5 4H15"/></svg><span data-lbl>Copy</span></button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" id="home">
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div data-reveal style="display:flex;flex-wrap:wrap;gap:10px"><span class="pill " data-mkt-status data-state="retry"><span class="dot"></span><span data-mkt-text>Connecting</span></span><span class="chain-badge pill-like" data-rec="chain" data-state="stated"><img src="assets/elysium-mark.png" width="24" height="24" alt=""><span class="cb-name">Elysium</span></span></div>
+        <h1 id="h1" data-reveal>Fuel for software <em>that runs unattended.</em></h1>
+        <p class="lead" data-reveal>Kaivo converts a steady pool of value into the horsepower behind whichever engine your software calls. Load the pool, let the router choose, and keep each cost easy to read.</p>
+        <div class="cta-row" data-reveal>
+          <a class="btn" href="#market">Watch the market <svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a class="btn green" data-rec="domain" data-state="stated" href="https://kaivo.cc">kaivo.cc <svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+      <div class="stage" aria-hidden="false">
+        <div class="layer" data-depth="0.4"><span class="orb a"></span><span class="orb b"></span></div>
+        <div class="layer" data-depth="1"><img class="logo-hero" src="assets/logo-640.png" width="640" height="604" alt="KAIVO mark: two crossing orbits around a green ring" fetchpriority="high"></div>
+        <div class="layer" data-depth="1.6"><span class="orb c"></span><span class="tag t1">Agents</span><span class="tag t2">Any engine</span><span class="tag t3">Single ledger</span></div>
+      </div>
+    </div>
+    <div class="tiles">
+      <div class="tile" data-reveal data-spot data-rec="models" data-state="stated"><div class="k">Models</div><div class="v">400+</div><div class="s">engines behind a single pool</div></div>
+      <div class="tile" data-reveal data-spot data-rec="backing" data-state="stated"><div class="k">Backing</div><div class="v">1:1 USDG</div><div class="s">kCASH is matched to its reserve</div></div>
+      <div class="tile" data-reveal data-spot data-rec="fees" data-state="absent"><div class="k">Routing fee</div><div class="v pend">pending</div><div class="s">charged on routed calls</div></div>
+      <div class="tile" data-reveal data-spot data-rec="yield" data-state="absent"><div class="k">Deposit yield</div><div class="v pend">pending</div><div class="s">earned while funds rest</div></div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-label="Live token ticker"><div class="ticker-track"><span class="skel skel-tick"></span><span class="skel skel-tick"></span><span class="skel skel-tick"></span><span class="skel skel-tick"></span><span class="skel skel-tick"></span><span class="skel skel-tick"></span><span class="skel skel-tick"></span><span class="skel skel-tick"></span><span class="skel skel-tick"></span><span class="skel skel-tick"></span><span class="skel skel-tick"></span><span class="skel skel-tick"></span></div></div>
+
+  <section id="market" aria-labelledby="h-market">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Live on-chain</span>
+      <h2 id="h-market">Where the volume sits <em>on the chain today.</em></h2>
+      <p>Ten pools with the heaviest daily turnover, pulled from a public pool index. The board stands apart from the token and does not wait on a contract announcement.</p>
+    </div>
+    <div data-reveal>
+    <div class="mkt" id="mkt" data-rec="market" data-state="stated">
+      <div class="mkt-head">
+        <div class="tabs" role="tablist" aria-label="Sort order">
+          <button class="tab" role="tab" type="button" data-mode="vol" aria-selected="true">By volume</button>
+          <button class="tab" role="tab" type="button" data-mode="chg" aria-selected="false">By 24h move</button>
+        </div>
+        <span class="pill " data-mkt-status data-state="retry"><span class="dot"></span><span data-mkt-text>Connecting</span></span>
+      </div>
+      <div class="mkt-err" role="status"></div>
+      <div class="row hd"><span>#</span><span>Token</span><span class="num">Price</span><span class="num">24h</span><span class="num">Volume 24h</span><span></span></div>
+      <div class="rows"><div class="row pin" data-spot data-pinned><span class="n">1</span><div class="who"><span class="tt logo"><img src="assets/logo-192.png" width="32" height="32" alt=""></span><span><b>KAIVO</b><small>Own token</small></span></div><span class="num px"><span class="chip">pending</span></span><span class="num chg"><span class="chip">pending</span></span><span class="num vol"><span class="chip">pending</span></span><button class="cp" type="button" data-copy="KAIVO" data-copy-label="KAIVO" aria-label="Copy symbol KAIVO"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6.5A2.5 2.5 0 0 1 7.5 4H15"/></svg></button></div><div class="row" data-ph aria-hidden="true"><span class="n">2</span><div class="who"><span class="skel sq"></span><span><span class="skel" style="width:90px"></span></span></div><span class="skel" style="width:80px;justify-self:end"></span><span class="skel" style="width:60px;justify-self:end"></span><span class="skel" style="width:84px;justify-self:end"></span><span></span></div><div class="row" data-ph aria-hidden="true"><span class="n">3</span><div class="who"><span class="skel sq"></span><span><span class="skel" style="width:90px"></span></span></div><span class="skel" style="width:80px;justify-self:end"></span><span class="skel" style="width:60px;justify-self:end"></span><span class="skel" style="width:84px;justify-self:end"></span><span></span></div><div class="row" data-ph aria-hidden="true"><span class="n">4</span><div class="who"><span class="skel sq"></span><span><span class="skel" style="width:90px"></span></span></div><span class="skel" style="width:80px;justify-self:end"></span><span class="skel" style="width:60px;justify-self:end"></span><span class="skel" style="width:84px;justify-self:end"></span><span></span></div><div class="row" data-ph aria-hidden="true"><span class="n">5</span><div class="who"><span class="skel sq"></span><span><span class="skel" style="width:90px"></span></span></div><span class="skel" style="width:80px;justify-self:end"></span><span class="skel" style="width:60px;justify-self:end"></span><span class="skel" style="width:84px;justify-self:end"></span><span></span></div><div class="row" data-ph aria-hidden="true"><span class="n">6</span><div class="who"><span class="skel sq"></span><span><span class="skel" style="width:90px"></span></span></div><span class="skel" style="width:80px;justify-self:end"></span><span class="skel" style="width:60px;justify-self:end"></span><span class="skel" style="width:84px;justify-self:end"></span><span></span></div><div class="row" data-ph aria-hidden="true"><span class="n">7</span><div class="who"><span class="skel sq"></span><span><span class="skel" style="width:90px"></span></span></div><span class="skel" style="width:80px;justify-self:end"></span><span class="skel" style="width:60px;justify-self:end"></span><span class="skel" style="width:84px;justify-self:end"></span><span></span></div><div class="row" data-ph aria-hidden="true"><span class="n">8</span><div class="who"><span class="skel sq"></span><span><span class="skel" style="width:90px"></span></span></div><span class="skel" style="width:80px;justify-self:end"></span><span class="skel" style="width:60px;justify-self:end"></span><span class="skel" style="width:84px;justify-self:end"></span><span></span></div><div class="row" data-ph aria-hidden="true"><span class="n">9</span><div class="who"><span class="skel sq"></span><span><span class="skel" style="width:90px"></span></span></div><span class="skel" style="width:80px;justify-self:end"></span><span class="skel" style="width:60px;justify-self:end"></span><span class="skel" style="width:84px;justify-self:end"></span><span></span></div><div class="row" data-ph aria-hidden="true"><span class="n">10</span><div class="who"><span class="skel sq"></span><span><span class="skel" style="width:90px"></span></span></div><span class="skel" style="width:80px;justify-self:end"></span><span class="skel" style="width:60px;justify-self:end"></span><span class="skel" style="width:84px;justify-self:end"></span><span></span></div><div class="row" data-ph aria-hidden="true"><span class="n">11</span><div class="who"><span class="skel sq"></span><span><span class="skel" style="width:90px"></span></span></div><span class="skel" style="width:80px;justify-self:end"></span><span class="skel" style="width:60px;justify-self:end"></span><span class="skel" style="width:84px;justify-self:end"></span><span></span></div></div>
+      <div class="mkt-foot"><span>Ten leading pools, ranked by 24h volume, exactly as the index reports them.</span><span>Re-reads each minute while this tab is in view.</span></div>
+    </div>
+    <script type="application/json" id="market-cfg">{"url":"https://api.geckoterminal.com/api/v2/networks/elysium/trending_pools?include=base_token,quote_token&page=1","fallbackNetwork":null,"pollMs":60000}</script></div>
+  </section>
+
+  <section id="how" aria-labelledby="h-how">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">The flow</span>
+      <h2 id="h-how">Three steps between <em>deposit and result.</em></h2>
+    </div>
+    <div class="cards">
+      <article class="card" data-reveal data-spot><span class="num">01</span><h3>Park the value</h3><p>Stable funds go in and come out as kCASH, a unit held at parity with its reserve.</p></article>
+      <article class="card" data-reveal data-spot><span class="num">02</span><h3>Let the router decide</h3><p>A task heads toward whichever engine suits it best, trading off quality, speed and price.</p></article>
+      <article class="card" data-reveal data-spot><span class="num">03</span><h3>Check the books</h3><p>Software leaves a plain trail of what it burned, so spending limits turn into numbers rather than hunches.</p></article>
+    </div>
+    <div class="flow" data-reveal>
+      <div class="node"><div class="chips"><span class="tk">NVDA</span><span class="tk">TSLA</span><span class="tk g">USDG</span></div><b>Capital</b><small>Shares, fiat</small></div>
+      <span class="ln" aria-hidden="true"></span>
+      <div class="node"><span class="core" aria-hidden="true">k</span><b>kCASH</b><small>1:1 USDG backed value</small></div>
+      <span class="ln" aria-hidden="true"></span>
+      <div class="node"><div class="pillbox"><span>400+ engines</span><span class="dark">AI</span><span>workers</span></div><small>Matched by the router</small></div>
+    </div>
+  </section>
+
+  <section id="models" aria-labelledby="h-models">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Model tiers</span>
+      <h2 id="h-models">Rate slots, <em>filled when confirmed.</em></h2>
+      <p>The table is laid out already. A figure lands the instant it is confirmed; until that moment its slot admits the gap.</p>
+    </div>
+    <div class="tbl" data-reveal>
+      <div class="tr hd"><span>Tier</span><span>Input</span><span>Output</span><span>Through Kaivo</span></div>
+      <div class="tr"><span><b>Light tier</b><small>small and speedy</small></span><span class="chip" data-rec="fees" data-state="absent">pending</span><span class="chip" data-rec="fees" data-state="absent">pending</span><span class="chip" data-rec="fees" data-state="absent">pending</span></div><div class="tr"><span><b>Balanced tier</b><small>day-to-day thinking</small></span><span class="chip" data-rec="fees" data-state="absent">pending</span><span class="chip" data-rec="fees" data-state="absent">pending</span><span class="chip" data-rec="fees" data-state="absent">pending</span></div><div class="tr"><span><b>Deep tier</b><small>long, tangled problems</small></span><span class="chip" data-rec="fees" data-state="absent">pending</span><span class="chip" data-rec="fees" data-state="absent">pending</span><span class="chip" data-rec="fees" data-state="absent">pending</span></div><div class="tr"><span><b>Code tier</b><small>writing and fixing</small></span><span class="chip" data-rec="fees" data-state="absent">pending</span><span class="chip" data-rec="fees" data-state="absent">pending</span><span class="chip" data-rec="fees" data-state="absent">pending</span></div>
+    </div>
+  </section>
+
+  <section id="funding" aria-labelledby="h-fund">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Funding</span>
+      <h2 id="h-fund">Routes for <em>topping up the pool.</em></h2>
+    </div>
+    <div class="cards">
+      <article class="card" data-reveal data-spot><h3>Stablecoin transfer</h3><p>Move stable funds from your account and collect kCASH in return.</p><div class="chips"><span class="chip ok" data-rec="backing" data-state="stated">1:1 USDG</span></div></article>
+      <article class="card" data-reveal data-spot><h3>Card checkout</h3><p>A fiat door for people who prefer plastic.</p><div class="chips"><span class="chip" data-rec="cardCheckout" data-state="absent">pending</span></div></article>
+      <article class="card" data-reveal data-spot><h3>Deposit yield</h3><p>A return on funds parked between runs.</p><div class="chips"><span class="chip" data-rec="yield" data-state="absent">pending</span></div></article>
+    </div>
+    <div class="sec-head" style="margin-top:56px" data-reveal>
+      <span class="eyebrow">Connect</span>
+      <h2>Plug it into <em>the tools you use today.</em></h2>
+    </div>
+    <div class="cards">
+      <article class="card" data-reveal data-spot><h3>Toolkits</h3><p>Ready-made adapters for popular orchestration libraries.</p><div class="chips"><span class="chip" data-rec="plugins" data-state="absent">pending</span></div></article>
+      <article class="card" data-reveal data-spot><h3>Tool protocol</h3><p>Offer the pool to any client fluent in a tool protocol.</p><div class="chips"><span class="chip" data-rec="plugins" data-state="absent">pending</span></div></article>
+      <article class="card" data-reveal data-spot><h3>API endpoint</h3><p>A single address for requests, whichever vendor answers.</p><div class="chips"><span class="chip" data-rec="endpoint" data-state="absent">pending</span></div></article>
+    </div>
+  </section>
+
+  <section id="kcash" aria-labelledby="h-k">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">kCASH</span>
+      <h2 id="h-k">A unit built for <em>machines with budgets.</em></h2>
+    </div>
+    <div class="steps" data-reveal>
+      <div class="step"><span class="big">Hold</span><p>Deposit stable funds and keep kCASH on standby.</p></div>
+      <div class="step"><span class="big">Spend</span><p>Software draws down the pool as its calls get routed and answered.</p></div>
+      <div class="step"><span class="big">Redeem</span><p>Leftover kCASH converts back into its reserve.</p><span class="chip" data-rec="redeemFee" data-state="absent">pending</span></div>
+    </div>
+  </section>
+
+  <section id="chain" aria-labelledby="h-chain">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Chain and records</span>
+      <h2 id="h-chain">Where it lives, <em>and what remains unsettled.</em></h2>
+    </div>
+    <div class="chain">
+      <dl class="kv" data-reveal data-rec="chain" data-state="stated">
+        <div><dt>Network</dt><dd class="v" style="margin:0"><span class="chain-badge"><img src="assets/elysium-mark.png" width="24" height="24" alt=""><span class="cb-name">Elysium</span></span></dd></div>
+        <div><dt>Chain ID</dt><dd class="v" style="margin:0">0x1863d</dd><button class="cpy" type="button" data-copy="0x1863d" data-copy-label="Chain ID" aria-label="Copy Chain ID"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6.5A2.5 2.5 0 0 1 7.5 4H15"/></svg><span data-lbl>Copy</span></button></div>
+        <div><dt>RPC</dt><dd class="v" style="margin:0">https://rpc.elysium.kinetiq.xyz</dd><button class="cpy" type="button" data-copy="https://rpc.elysium.kinetiq.xyz" data-copy-label="RPC address" aria-label="Copy RPC address"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2.5"/><path d="M5 15V6.5A2.5 2.5 0 0 1 7.5 4H15"/></svg><span data-lbl>Copy</span></button></div>
+        <div><dt>Source</dt><dd class="v" style="margin:0">client statement</dd></div>
+      </dl>
+      <div class="kv" data-reveal>
+        <div data-rec="networks" data-state="stated"><span class="k">Networks</span><span class="chips" style="display:flex;flex-wrap:wrap;gap:8px"><span class="chip ok">Elysium</span><span class="chip ok">BNB Chain</span><span class="chip ok">Base</span></span></div>
+        <div><span class="k">Contract address</span><span class="chip" data-rec="ca-status" data-state="absent">pending</span></div>
+        <div><span class="k">X</span><span class="chip" data-rec="x-status" data-state="stated">pending</span></div>
+        <div><span class="k">GitHub</span><span class="chip" data-rec="github-status" data-state="stated">pending</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="h-faq">
+    <div class="sec-head" data-reveal>
+      <span class="eyebrow">Questions</span>
+      <h2 id="h-faq">Plain replies, <em>no fog.</em></h2>
+    </div>
+    <div class="faq" data-reveal>
+      <details><summary>What does Kaivo actually do?</summary><div class="ans"><p>It stores a steady pool of value that software can burn through across many engines, with routing and bookkeeping looked after.</p></div></details>
+      <details><summary>What is kCASH?</summary><div class="ans"><p>The accounting unit for that pool, held at parity with its reserve so a figure keeps its meaning.</p></div></details>
+      <details><summary>Why are some slots marked pending?</summary><div class="ans"><p>Whatever lacks confirmation is marked pending rather than guessed. Links, addresses and rates surface only after they are stated.</p></div></details>
+      <details><summary>Is the market board tied to the token?</summary><div class="ans"><p>No. It reads a public index spanning the entire network and keeps running whatever happens with a contract.</p></div></details>
+      <details><summary>Which networks are in scope?</summary><div class="ans"><p>Elysium leads, with BNB Chain and Base next to it.</p></div></details>
+      <details><summary>Is any of this financial advice?</summary><div class="ans"><p>No. Market numbers originate with an outside provider and appear untouched.</p></div></details>
+    </div>
+  </section>
+
+  <section class="closing" data-reveal>
+    <span class="glow" aria-hidden="true"></span>
+    <h2>Hand your software <em>a purse with brains.</em></h2>
+    <p>Watch the board, keep an eye on the records as they firm up, and return once the gaps close.</p>
+    <div class="cta-row"><a class="btn" href="#market">Return to the board <svg class="arr" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn ghost" href="#top">Top of page</a></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p>Market data comes from an outside public index and is shown untouched. Nothing here is a recommendation to buy or sell.</p>
+    <div class="links"><a href="#market">Market</a><a href="#how">Flow</a><a href="#faq">FAQ</a><a href="https://kaivo.cc" data-rec="domain-foot" data-state="stated">kaivo.cc</a></div>
+  </div>
+</footer>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="app.js" defer></script>
+</body>
+</html>
